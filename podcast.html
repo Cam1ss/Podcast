@@ -1,28 +1,70 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Podcast</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-</head>
-<body>
-    <div class="h-screen bg-linear-65 from-gray-800 to-purple-900 flex items-center justify-center flex-col gap-3">
-  <img src="src/icons8-podcast-100.png" alt="Podcast" class="w-24">
-  <p class="font-semibold text-white">Episódio 1: Introdução</p>
-  <audio controls class="w-full max-w-sm">
-    <source src="src/Sabrina Carpenter - Tears (Official Video) [V9vuCByb6js].mp3" type="audio/mpeg">
-    Seu navegador não suporta o elemento de áudio.
-  </audio>
-</div>
+  </head>
 
-</body>
+  <body class="min-h-screen bg-gradient-to-br from-gray-800 to-purple-900 flex flex-col items-center">
+    <main class="w-full flex flex-col items-center pt-10 space-y-8 overflow-y-auto">
+      
+      <!-- Capa -->
+      <img class="w-[19rem]" src="src/img/Café com Líderes.png" alt="capa-podcast">
+
+      <!-- Bloco do Podcast -->
+      <div class="flex flex-col items-center gap-6 w-full p-6 bg-[#1C1C1C] max-w-lg shadow-lg">
+        <div class="text-left w-full space-y-3">
+          <h1 class="text-white text-4xl font-bold">Fala, Líder!</h1>
+          <p class="text-white">
+            Um bate-papo descontraído entre estudantes e profissionais que acreditam no poder da liderança. A cada episódio, exploramos histórias reais, conselhos e vivências que mostram que liderar é, acima de tudo, aprender com pessoas
+          </p>
+        </div>
+
+        <!-- Cards dos Episódios -->
+        <div class="flex flex-col items-center gap-4 w-full mt-5">
+          
+          <!-- Episódio 01 -->
+          <div class="flex items-center bg-purple-500 rounded-xl w-full py-4 px-5 gap-3 shadow-md">
+            <img class="w-13" src="src/icons/icon-podcast.png" alt="Podcast">
+            <div class="flex flex-col gap-2">
+              <p class="font-semibold text-white">Episódio 1: Introdução</p>
+              <audio controls class="w-[15rem] h-[2rem] max-w-sm">
+                <source src="src/audio/Sabrina Carpenter - Tears (Official Video) [V9vuCByb6js].mp3" type="audio/mpeg">
+                Seu navegador não suporta o elemento de áudio.
+              </audio>
+            </div>
+          </div>
+
+          <!-- Episódio 02 -->
+          <div class="flex items-center bg-purple-500 rounded-xl w-full py-4 px-5 gap-3 shadow-md">
+            <img class="w-13" src="src/icons/icon-podcast.png" alt="Podcast">
+            <div class="flex flex-col gap-2">
+              <p class="font-semibold text-white text-xl">Episódio 2: Em Breve</p>
+            </div>
+          </div>
+
+           <!-- Episódio 03 -->
+          <div class="flex items-center bg-purple-500 rounded-xl w-full py-4 px-5 gap-3 shadow-md">
+            <img class="w-13" src="src/icons/icon-podcast.png" alt="Podcast">
+            <div class="flex flex-col gap-2">
+              <p class="font-semibold text-white text-xl">Episódio 3: Em Breve</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Botão Voltar -->
+        <a href="index.html" class="text-purple-400 hover:text-purple-200 font-semibold m-4 text-xl">Voltar</a>
+      </div>
+
+    </main>
+  </body>
 </html>
-
